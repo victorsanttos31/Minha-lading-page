@@ -1,0 +1,175 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.header-content {
+    padding: 1rem;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    margin: 0.5rem 0;
+}
+
+header .tagline {
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Para alinhar os itens do menu */
+    justify-content: center; /* Centralizar os itens */
+    flex-wrap: wrap; /* Permitir quebra de linha em telas pequenas */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section, aside {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-of-type, aside:last-of-type {
+    border-bottom: none;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Seção de Projetos */
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Layout responsivo de grid */
+    gap: 20px;
+}
+
+.projetos-grid article {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.projetos-grid article h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsividade (Media Queries) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Menu vertical em telas menores */
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .header-content {
+        padding: 0.5rem;
+    }
+
+    main {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    section, aside {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
